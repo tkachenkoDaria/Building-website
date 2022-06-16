@@ -1,0 +1,732 @@
+/* Specification */
+body{
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+}
+li, ul{
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+h2, h3, h4, h5, h6{
+    color: #222;
+}
+h2{
+    font-weight: 700;
+    font-size: 48px;
+    
+}
+h4{
+    font-size: 20px;
+}
+p{
+    color: #555;
+}
+.t-size{
+    font-size: 14px;
+}
+button,
+button:hover,
+button:focus {
+	font-family: inherit;
+	outline: none;
+	border: none;
+}
+.button{
+    background: #19BCE4;
+    border-radius: 6px;
+    padding: 10px 25px;
+    border: #19BCE4 1px solid;
+    color: #fff;
+    transition: color 0.5s ease, background 0.5s ease, border 0.5s ease;
+}
+.button:hover{
+    color: #000;
+    background: none;
+    border: #19BCE4 1px solid;
+    transition: color 0.5s ease, background 0.5s ease, border 0.5s ease;
+}
+.section{
+    padding: 60px 0;
+}
+/*      */
+.header{
+    padding: 46px 0 44px;
+}
+.header-wrapp{
+    font-size: 18px;
+}
+.header-wrapp a{
+    color: #02012B;
+    transition: color 0.5s ease;
+}
+.header-wrapp a:hover{
+    color: #02012b94;
+    transition: color 0.5s ease;
+}
+.logo{
+    color: #02012B;
+}
+.logo::before{
+    content: '';
+    display: block;
+    background: url('../img/logo.svg') no-repeat;
+    margin-right: 6px;
+    width: 40px;
+    height: 40px;
+}
+.menu__list a{
+    padding-left: 40px;
+}
+.login{
+    font-size: 16px;
+}
+/*      */
+.house-selection{
+    background:linear-gradient(rgba(0, 0, 0, 0.56),rgba(0, 0, 0, 0.56)), url('../img/house-selection.png');
+    padding: 185px 0 125px;
+    margin: auto;
+}
+.offer{
+    color: #fff;
+    text-align: center;
+}
+.offer__title{
+    font-weight: 700;
+    font-size: 64px;
+    margin: 0 auto 24px;
+}
+.offer__text{
+    max-width: 622px;
+    margin:  0 auto 97px;
+    color: #fff;
+}
+/*            */
+.about{
+    padding: 120px 0 10px;
+}
+.about-photo_xl{
+    display: none;
+}
+.about-wrapp{
+    display: flex;
+}
+.about-photo__tiny {
+    position: relative;
+    left: 50%;
+    bottom: 137px;
+}
+.about-text{
+    margin: 24px 0 40px;
+    max-width: 479px;
+}
+.about-block__title{
+    font-size: 24px;
+    margin: 24px 0 16px;
+}
+.about-block__text{
+    max-width: 229px;
+    margin-bottom: 40px;
+}
+/*              */
+.house-search{
+    padding: 98px 0;
+    background: #F8FDFE;
+}
+.house-search-wrapp{
+    display: flex;
+}
+.home{
+    background: #FFFFFF;
+    border: 0.5px solid rgba(25, 188, 228, 0.2);
+    padding: 22px;
+    margin-bottom: 16px;
+}
+.home:last-of-type{
+    margin-bottom: 0;
+}
+.house-search-title{
+    margin-bottom: 68px;
+}
+.home__icon{
+    padding-right: 24px;
+}
+.home__text{
+    max-width: 365px;
+    margin: 0;
+}
+/*      */
+.popular-places{
+    padding: 96px 0 60px;
+}
+.popular-place-wrapp{
+    text-align: center;
+}
+.popular-place-wrapp p{
+    margin:16px 0 40px
+}
+.city__photo{
+    width: 90%;
+}
+.city{
+    position: relative;
+}
+.city__info{
+    background: rgba(0, 96, 119, 0.02);
+    backdrop-filter: blur(29px);
+    position: absolute;
+    top: 77px;
+    left: 20%;
+    padding: 12px 32px;
+    display: inline-block;
+    text-align: center;
+}
+.city__info_top{
+    top: 22px;
+    left: 25%;
+}
+.city__photo_margin{
+    margin-bottom: 31px;
+}
+.city__name{
+    font-weight: 500;
+    font-size: 24px;
+    color: #fff;
+}
+.city__attractions{
+    margin: 0;
+    color: #DDD;
+}
+/*              */
+.choose-us{
+    overflow: hidden;
+}
+.choose-us-info__text {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.choose-us-info__button::after {
+    content: '';
+    background: url('../img/Vector.svg') no-repeat;
+    display: inline-block;
+    width: 17px;
+    height: 16px;
+    margin-left: 12px;
+    margin-bottom: -3px;
+    transition: background 0.5s ease;
+}
+.choose-us-info__button:hover::after{
+    content: '';
+    background: url('../img/Vector2.svg') no-repeat;
+    transition: background 0.5s ease;
+}
+.choose-us-photo {
+    margin-left: 50px;
+}
+.choose-us-photo-lg{
+    display: none;
+}
+/*                  */
+.people-say{
+    background: #FFF8F7;
+    text-align: center;
+}
+.reviews {
+    background: linear-gradient(180deg,  rgba(255, 248, 247, 1)14%, rgba(255, 255, 255, 1)17%);
+    padding: 0 38px 31px 39px;
+}
+.reviews__name-man {
+    font-size: 24px;
+    margin: 16px 0 8px;
+}
+.reviews__rating::after{
+    content: '\2605';
+    display: block;
+    font-size: 24px;
+    padding-right: 8px;
+    color:#D2D1D1;
+}
+.reviews__rating_active::after {
+    color: #F7941D;
+}
+.reviews__desc {
+    font-size: 14px;
+    margin-top: 16px;
+    max-width: 293px;
+}
+/*             */
+.search-wrapp {
+    background: #19BCE4;
+    border-radius: 24px;
+}
+.search-title{
+    font-size: 40px;
+    color: #fff;
+    margin: 48px 0 40px;
+    text-align: center;
+}
+.form-search{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin-bottom: 52px;
+}
+.form-search__input {
+    background: #FFFFFF;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    width: 65%;
+    padding: 18px;
+    color: #555;
+}
+.form-search__button{
+    margin-left: -142px;
+}
+/*        */
+.footer{
+    padding: 55px 0 73px;
+}
+.copyrights{
+    margin: 20px 0 37px;
+    font-size: 18px;
+    max-width: 330px;
+}
+.social__facebook, .social__twitter, .social__instagram, .social__in {
+    background: url('../img/footer/footer-one.svg') no-repeat;
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+.social__facebook:hover, .social__twitter:hover, .social__instagram:hover, .social__in:hover {
+    opacity: 0.5;
+    transition: opacity 0.5s ease;
+}
+.social__twitter {
+    background: url('../img/footer/footer-two.svg') no-repeat;
+}
+.social__instagram {
+    background: url('../img/footer/footer-three.svg') no-repeat;
+}
+.social__in {
+    background: url('../img/footer/footer-four.svg') no-repeat;
+    margin-right: 0;
+}
+.footer-subtitle {
+    font-size: 24px;
+    margin: 0;
+}
+.footer-menu {
+    margin-top: 24px;
+    font-size: 18px;
+}
+.footer-menu__item{
+    color: #555;
+    line-height: 2.3rem;
+    transition: color 0.5s ease;
+}
+.footer-menu__item:hover {
+    color: #555555a1;
+    transition: color 0.5s ease;
+}
+.footer-menu__item_tel::before, .footer-menu__item_email::before, .footer-menu__item_google-play::before{
+    content: '';
+    background: url('../img/footer/tel.svg') no-repeat;
+    width: 16px;
+    height: 16px;
+    display:inline-block;
+    margin-right: 8px;
+    margin-left: -10px;
+}
+.footer-menu__item_email::before{
+    background: url('../img/footer/google.png') no-repeat;
+}
+.footer-menu__item_google-play::before{
+    background: url('../img/footer/playstore.svg') no-repeat;
+}
+
+/*  Responsive  */
+@media (max-width: 1399.98px) {
+    .about-photo{
+        margin-left: -40px;
+    }
+    .about-photo__tiny{
+        left: 52%;
+    }
+    .home{
+        margin-left: 40px;
+    }
+    .city__info_top {
+        top: 1px;
+    }
+    .footer-menu__item_tel::before, .footer-menu__item_email::before, .footer-menu__item_google-play::before{
+        margin-right: 8px;
+        margin-left: -39px;
+    }
+}
+@media (max-width: 1199.98px) {
+    .button-about, .choose-us-info__button{
+        display: block;
+        margin: auto;
+    }
+    .select-search {
+        padding: 23px 75px !important;
+    }
+    .menu__list a {
+        padding-left: 22px;
+    }
+    .about-wrapp, .house-search-wrapp, .choose-us-wrapp {
+        flex-direction: column;
+    }
+    .house-search-photo{
+        display: block;
+        margin: auto;
+    }
+    .about {
+        padding: 150px 0 30px;
+    }
+    .about-photo__big, .choose-us-photo{
+        display: block;
+        margin: 68px auto 0;
+    }
+    .about-photo__tiny {
+        left: 58%;
+        bottom: 171px;
+    }
+    .about-photo, .choose-us-photo-lx{
+        display: none;
+    }
+    .about-photo_xl, .choose-us-photo-lg{
+        display: block;
+    }
+    .about-subtitle{
+        margin-top: -70px;
+    }
+    .about-text, .about-block__text, .home__text{
+        max-width: 100%;
+    }
+    .about-text {
+        margin: -90px 0 40px;
+    }
+    .home{
+        margin: 20px 0 0;
+        padding: 30px;
+    }
+    .home:first-of-type{
+        margin-top: 40px;
+    }
+    .choose-us-info__text{
+        margin-top: 60px;
+    }
+    .city__info {
+        top: 62px;
+        left: 17%;
+    }
+    .city__info_top {
+        top: -9px;
+        left: 18%;
+    }
+    .house-search, .popular-places, .section {
+        padding: 50px 0;
+    }
+    .social{
+        margin-bottom: 55px;
+    }
+    .footer-menu__item_tel::before, .footer-menu__item_email::before, .footer-menu__item_google-play::before{
+        margin-left: 0;
+    }
+    .popular-places-wrapp{
+        flex-wrap: nowrap;
+        overflow: scroll;
+    }
+}
+@media (max-width: 991.98px) {
+    .offer__title{
+        font-size: 50px;
+    }
+    h2{
+        font-size: 40px;
+    }
+    .house-selection{
+        padding: 90px 0;
+    }
+    .header-wrapp{
+        justify-content: space-between;
+    }
+    .logo{
+        margin-bottom: 11px;
+    }
+    .header {
+        padding: 35px 0;
+    }
+    .menu__list a {
+        padding-left: 15px;
+    }
+    .select {
+        padding: 10px 15px;
+    }
+    .select-search {
+        padding: 23px 40px !important;
+    }
+    .about-photo__big {
+        width: 60%;
+    }
+    .house-search-photo, .choose-us-photo{
+        width: 70%;
+    }
+    .about-photo__tiny {
+        left: 57%;
+        bottom: 162px;
+        width: 30%;
+    }
+    .about-text, .about-block__text, .home__text, .reviews__desc{
+        max-width: 95%;
+    }
+    .copyrights{
+        max-width: 300px;
+    }
+    .form-search__input{
+        width: 85%;
+    }
+}
+@media (max-width: 767.98px) {
+    .footer-subtitle_md{
+        margin-top: 30px;
+    }
+    .form-selection{
+        flex-direction: column;
+    }
+    .select{
+        width: auto;
+        margin-top: 10px;
+    }
+    .select-search{
+        margin-top: 15px;
+    }
+    .offer__text {
+        max-width: 95%;
+        margin: 0 auto 50px;
+    }
+    .about-photo__big, .choose-us-photo {
+        margin: 25px auto 0;
+    }
+    .house-search-title {
+        margin-bottom: 25px;
+    }
+    .home {
+        margin: 20px 0 0;
+        padding: 15px;
+    }
+    .city__photo{
+        width: 300px;
+        margin-left: 20px;
+    }
+    .city__photo_margin{
+        margin-bottom: 20px;
+    }
+    .city__info {
+        top: 66px;
+        left: 23%;
+    }
+    .city__info_top {
+        top: 5px;
+        left: 29%;
+    }
+    .city__info_top_md{
+        top: 0;
+        left: 100px;
+    }
+    .city__attractions{
+        font-size: 14px;
+    }
+    .city__name {
+        font-size: 20px;
+    }
+    .burger{
+        background: url('../img/burger-menu.svg') no-repeat;
+        display: block;
+        width: 20px;
+        height: 20px;
+        position: relative;
+        z-index: 20;
+        background-size: 150%;
+        margin-left: 75px;
+        order: 1;
+    }
+    .button-wrapp {
+        display: flex;
+        align-items: center;
+    }
+    .menu{
+        position: absolute;
+        top: 53%;
+        display: none;
+        right: 0;
+    }
+    .menu.active{
+        display: block;
+    }
+    .menu__list {
+        flex-direction: column;
+        line-height: 2.5rem;
+        background: #fff;
+        padding: 24px;
+        z-index: 10;
+    }
+    .header{
+        position: relative;
+    }
+    .about-photo__tiny {
+        left: 55%;
+        bottom: 120px;
+    }
+}
+@media (max-width: 450px) {
+    .header {
+        padding: 15px 0;
+    }
+    .offer__title {
+        font-size: 35px;
+    }
+    p{
+        font-size: 16px;
+    }
+    .house-selection {
+        padding: 35px 0;
+    }
+    .form-selection{
+        padding: 10px;
+    }
+    .select__toggle {
+        padding: 0px;
+        font-size: 18px;
+    }
+    .select {
+        padding: 4px 10px;
+    }
+    .select-search {
+        padding: 15px 40px !important;
+    }
+    .about {
+        padding: 100px 0 15px;
+    }
+    h2, .search-title {
+        font-size: 30px;
+    }
+    .about-block__title, .footer-subtitle {
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    .about-text {
+        margin: -65px 0 25px;
+    }
+    .about-photo__tiny {
+        left: 55%;
+        bottom: 98px;
+    }
+    .form-search__input {
+        width: 99%;
+    }
+    .copyrights{
+        max-width: 99%;
+        font-size: 16px;
+    }
+    .footer-menu {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    .city__photo {
+        width: 250px;
+        margin-left: 15px;
+    }
+    .city__info{
+        padding: 12px 20px;
+    }
+    .city__info_top_md {
+        left: 70px;
+    }
+    .house-search, .popular-places, .section {
+        padding: 35px 0;
+    }
+    .footer {
+        padding: 30px 0;
+    }
+    .about-block__title{
+        max-width: 65%;
+    }
+    .form-search {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .form-search__button{
+        background: transparent;
+        border: 1px solid #fff;
+        margin: 10px auto 0;
+        transition: border 0.5s ease;
+    }
+    .form-search__button:hover{
+        border: 1px solid #fff;
+        transition: border 0.5s ease;
+    }
+    .form-search__input{
+        padding: 10px;
+    }
+    .search-wrapp{
+        border-radius: 0;
+    }
+    .button{
+        width: 99%;
+        padding: 10px 20px;
+    }
+    .footer-menu__item_tel::before, .footer-menu__item_email::before, .footer-menu__item_google-play::before {
+        margin-left: -30px;
+    }
+    .footer-menu {
+        font-size: 12px;
+    }
+}
+@media (max-width: 345px) {
+    .about-block__title {
+        max-width: 90%;
+    }
+    .about-photo__tiny {
+        left: 55%;
+        bottom: 68px;
+    }
+    .about-text {
+        margin: -46px 0 25px;
+    }
+    .burger{
+        margin-left: 30px;
+    }
+    .city__photo {
+        width: 185px;
+    }
+    .city__name {
+        font-size: 16px;
+    }
+    .city__info {
+        top: 51px;
+        left: 23%;
+        padding: 3px 11px;
+    }
+    .city__info_top {
+        top: 11px;
+        left: 27%;
+    }
+    .city__info_top_md {
+        top: -32px;
+        left: 60px;
+    }
+
+   
+}
